@@ -1,0 +1,45 @@
+:root {
+    --bg: #dfe6e9;
+    --bg2:#f5f6fa;
+    --text: #277BC0;
+    --text2:#171515;
+    --text3:#BB001B;
+    --headingSmallText:1.5rem;
+    --lead:1.2rem;
+    --leadSmall:1rem;
+    --small:0.9rem;
+    --smaller:0.8rem;
+  }
+.footer{
+    background-color: var(--bg2);
+    color:var(--text);
+}
+.footer .lead{
+    font-size: var(--lead);
+    line-height: 2rem;
+    margin:1rem;
+}
+.footer .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.footer .heading .display-4{
+    padding-top: 2rem;
+}
+.footer .heading hr{
+    border-color:var(--text);
+    width: 75%;
+}
+.footer .heading p{
+    margin:0;
+}
+.footer .jumbotron{
+    background-color: var(--bg);
+    padding:2rem;
+    border:1px solid var(--bg2);
+    border-radius: 0.5rem;
+}

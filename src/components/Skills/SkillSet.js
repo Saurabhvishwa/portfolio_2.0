@@ -15,6 +15,10 @@ import Spring from "../../images/Spring.png";
 import Vscode from "../../images/Vscode.png";
 import IJ from "../../images/Intellij.png";
 import Postman from "../../images/Postman.png";
+import ActiveMQ from "../../images/ActiveMQ.svg";
+import Devops from "../../images/Devops.png";
+import Maven from "../../images/Maven.png";
+import Liquibase from "../../images/Liquibase.png";
 export const frontEnd = [
   { id: 1, name: "ReactJS", source: React },
   { id: 2, name: "Angular", source: Angular },
@@ -29,17 +33,25 @@ export const backEnd = [
 export const db = [
   { id: 1, name: "MySQL", source: MySql },
   { id: 2, name: "Oracle", source: Oracle },
-  { id: 3, name: "MS Sql Server", source: SqlServer },
+  { id: 3, name: "Microsoft SQL Server", source: SqlServer },
   { id: 4, name: "Firebase", source: Firebase },
 ];
-export const other = [
-  { id: 1, name: "Git", source: Git },
+export const messaging = [
+  { id: 1, name: "ActiveMQ", source: ActiveMQ },
   {
     id: 2,
     name: "Kafka",
     source: Kafka,
   },
-  { id: 3, name: "Docker", source: Docker },
+];
+export const other = [
+  { id: 1, name: "Maven", source: Maven },
+  { id: 2, name: "Liquibase", source: Liquibase },
+];
+export const devops = [
+  { id: 1, name: "Git", source: Git },
+  { id: 2, name: "Docker", source: Docker },
+  { id: 3, name: "Azure DevOps", source: Devops },
 ];
 export const tools = [
   { id: 1, name: "VSCode", source: Vscode },
@@ -77,6 +89,22 @@ export const skills = [
   {
     name: "Git",
     level: "65%",
+  },
+  {
+    name: "Maven",
+    level: "80%",
+  },
+  {
+    name: "Docker",
+    level: "60%",
+  },
+  {
+    name: "Java Messaging Service",
+    level: "80%",
+  },
+  {
+    name: "Kafka",
+    leve: "60%",
   },
   { name: "JUnit - Test Framework", level: "60%" },
 ];

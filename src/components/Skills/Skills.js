@@ -1,6 +1,15 @@
 import "./Skills.css";
 
-import { skills, frontEnd, backEnd, db, other, tools } from "./SkillSet";
+import {
+  skills,
+  frontEnd,
+  backEnd,
+  db,
+  other,
+  tools,
+  messaging,
+  devops,
+} from "./SkillSet";
 export function Skills() {
   return (
     <div className="container_skills">
@@ -62,10 +71,27 @@ export function Skills() {
               </div>
             </div>
             <div className="tech jumbotron">
-              <h1 className="lead">Other</h1>
+              <h1 className="lead">Messaging</h1>
               <hr className="my-2" />
               <div className="icon_wrapper container-fluid">
-                {other.map((skill) => {
+                {messaging.map((skill) => {
+                  return (
+                    <img
+                      src={skill.source}
+                      alt={skill.name}
+                      key={skill.name}
+                      height="100px"
+                      width="100px"
+                    />
+                  );
+                })}
+              </div>
+            </div>
+            <div className="tech jumbotron">
+              <h1 className="lead">DevOps</h1>
+              <hr className="my-2" />
+              <div className="icon_wrapper container-fluid">
+                {devops.map((skill) => {
                   return (
                     <img
                       src={skill.source}
@@ -83,6 +109,23 @@ export function Skills() {
               <hr className="my-2" />
               <div className="icon_wrapper container-fluid">
                 {tools.map((skill) => {
+                  return (
+                    <img
+                      src={skill.source}
+                      alt={skill.name}
+                      key={skill.name}
+                      height="100px"
+                      width="100px"
+                    />
+                  );
+                })}
+              </div>
+            </div>
+            <div className="tech jumbotron">
+              <h1 className="lead">Other</h1>
+              <hr className="my-2" />
+              <div className="icon_wrapper container-fluid">
+                {other.map((skill) => {
                   return (
                     <img
                       src={skill.source}

@@ -25,15 +25,29 @@ export function Experience() {
           <li className="nav-item" role="presentation">
             <button
               className="nav-link"
-              id="profile-tab"
+              id="capgemini-tab"
               data-bs-toggle="tab"
-              data-bs-target="#profile-tab-pane"
+              data-bs-target="#capgemini-tab-pane"
               type="button"
               role="tab"
-              aria-controls="profile-tab-pane"
+              aria-controls="capgemini-tab-pane"
               aria-selected="false"
             >
               {company[1].company_name}
+            </button>
+          </li>
+          <li className="nav-item" role="presentation">
+            <button
+              className="nav-link"
+              id="seezit-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#seezit-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="seezit-tab-pane"
+              aria-selected="false"
+            >
+              {company[2].company_name}
             </button>
           </li>
         </ul>
@@ -66,9 +80,9 @@ export function Experience() {
           <div
             className="container-fluid tab-pane fade"
             key={company[1].id}
-            id="profile-tab-pane"
+            id="capgemini-tab-pane"
             role="tabpanel"
-            aria-labelledby="profile-tab"
+            aria-labelledby="capgemini-tab"
             tabIndex="1"
           >
             <div className="jumbotron">
@@ -84,6 +98,31 @@ export function Experience() {
                 })}
                 <li>
                   Technology - <code>{company[1].technologies}</code>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className="container-fluid tab-pane fade"
+            key={company[2].id}
+            id="seezit-tab-pane"
+            role="tabpanel"
+            aria-labelledby="seezit-tab"
+            tabIndex="1"
+          >
+            <div className="jumbotron">
+              <h1 className="display-6">
+                {company[2].designation} @&nbsp;
+                <em>{company[2].company_name}</em>
+              </h1>
+              <p className="lead">{company[2].joined_at}</p>
+              <hr className="my-2" />
+              <ul>
+                {company[2].achievements.map((achievement, index) => {
+                  return <li key={index}>{achievement}</li>;
+                })}
+                <li>
+                  Technology - <code>{company[2].technologies}</code>
                 </li>
               </ul>
             </div>

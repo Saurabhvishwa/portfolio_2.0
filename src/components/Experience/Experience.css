@@ -44,6 +44,7 @@
 .experience .exp_tab .nav-link{
     border-radius: 0;
     border:none;
+    border-right: 0.2rem solid white;
     color:var(--text);
     background-color: var(--bg);
 }
@@ -79,8 +80,12 @@
         width: 8rem;
         left:40%;
     }
+    .experience .exp_tab .nav-tabs{
+        justify-content: start;
+    }
     .experience .exp_tab .nav-link{
         font-size:var(--smaller);
+        border-bottom:0.2rem solid white;
     }
     .experience .exp_tab .tab-pane{
         padding:1rem;
